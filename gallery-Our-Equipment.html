@@ -1,13 +1,17 @@
 
 
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Dumpster Rental and Junk Removal in  Austin,  TX 78701 | Redline Dumpster |  Gallery | gallery-Our-Equipment </title>
+        <title>Dumpster Rental and Junk Removal in Hernando County, FL | Redline Dumpster |  Gallery | Our Equipment</title>
+        <meta name="description" content="A collection of our equipment photos to showcase our best work as a dumpster rental and junk removal company. See what Redline Dumpster can do for you!">
         <!-- <title>ProPhone Templates</title> -->
         <!-- TailwindCSS  -->
         <!-- <link rel="stylesheet" type="text/css" href="/staticfiles/landing_page_gen/tailwind.css"> -->
@@ -18,7 +22,7 @@
            
 
         
-        <link href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
+        <link defer href="https://prophone.herokuapp.com/staticfiles/landing_page_gen/output.css" rel="stylesheet">
         <!-- Include Scripts -->
         <!-- Header Component, only used for presentation -->
 
@@ -34,7 +38,7 @@
 <script defer src="https://unpkg.com/alpinejs@3.7.0/dist/cdn.min.js"></script>
 <!-- Focus Visible Polyfill -->
 <script defer src="https://unpkg.com/focus-visible@5.2.0/dist/focus-visible.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script> -->
         <style>
@@ -58,7 +62,7 @@
                 --color-primary-foreground: hsl(0, 0%, var(--switch));
             }
         </style>
-                <script type="text/javascript">
+                <script type="text/javascript" defer>
                     function send_sms(slug){
                         console.log('send_sms', slug)
                         // var sender_fname = $(`#${form_num}-first-name`).val()
@@ -92,8 +96,7 @@
                         var sender_services = ""
         
                         console.log("text", slug, sender_fname, sender_lname, sender_number, sender_message)
-                        // return ' bucks'
-                        // fetch('http://127.0.0.1:8000/sms/' + slug , {
+
                         fetch('https://prophone.herokuapp.com/sms/' + slug , {
                             method: 'POST',
                             body: JSON.stringify({
@@ -314,7 +317,7 @@
                                         <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                             <div class="relative grid gap-6 px-5 py-6 bg-white sm:gap-8 sm:p-8">
                                                 <!-- Render each sublink -->
-                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Dumpster Rental and Junk Removal company offers homeowners a convenient and affordable way to get rid of their unwanted junk. We provide a variety of yard dumpsters that can be filled with any type of debris from your home.&#x27;, &#x27;copy&#x27;: &#x27;Dumpster Rental&#x27;, &#x27;href&#x27;: &#x27;service-Dumpster-Rental&#x27;}, {&#x27;title&#x27;: &#x27;We provide junk removal services to homeowners and businesses in the area. Contact us today for a free quote!&#x27;, &#x27;copy&#x27;: &#x27;Junk Removal&#x27;, &#x27;href&#x27;: &#x27;service-Junk-Removal&#x27;}, {&#x27;title&#x27;: &#x27;Dumpster Rental and Junk Removal company provides debris removal service for homeowners and businesses. We will remove all the debris from your home or property quickly and efficiently.&#x27;, &#x27;copy&#x27;: &#x27;Debris Removal&#x27;, &#x27;href&#x27;: &#x27;service-Debris-Removal&#x27;}]"> -->
+                                                <!-- <each loop="link in [{&#x27;title&#x27;: &#x27;Dumpster Rental and Junk Removal company offers homeowners a convenient and affordable way to get rid of their unwanted junk. We provide a variety of yard dumpsters that can be filled with any type of debris from your home.&#x27;, &#x27;copy&#x27;: &#x27;Dumpster Rental&#x27;, &#x27;href&#x27;: &#x27;service-Dumpster-Rental&#x27;}, {&#x27;title&#x27;: &#x27;We provide junk removal services to homeowners and businesses in the area. Contact us today for a free quote!&#x27;, &#x27;copy&#x27;: &#x27;Junk Removal&#x27;, &#x27;href&#x27;: &#x27;service-Junk-Removal&#x27;}, {&#x27;title&#x27;: &#x27;Dumpster Rental and Junk Removal company provides debris removal service for homeowners and businesses. We will remove all the debris from your home or property quickly and efficiently.&#x27;, &#x27;copy&#x27;: &#x27;Debris Removal&#x27;, &#x27;href&#x27;: &#x27;service-Debris-Removal&#x27;}, {&#x27;title&#x27;: &quot;We offer a hassle-free delivery service for mulch, rocks or dirt. We&#x27;ll take care of the delivery so you can focus on your project.&quot;, &#x27;copy&#x27;: &#x27;Delivery Services&#x27;, &#x27;href&#x27;: &#x27;service-Delivery-Services&#x27;}]"> -->
                                                   
                                                     <a
                                                         href=" service-Dumpster-Rental "
@@ -345,6 +348,17 @@
                                                     >
                                                         <!-- <p class="text-base font-medium text-gray-900">Dumpster Rental and Junk Removal company provides debris removal service for homeowners and businesses. We will remove all the debris from your home or property quickly and efficiently.</p> -->
                                                         <p class="mt-1 text-sm text-gray-500">Debris Removal</p>
+                                                    </a>
+                                                <!-- </each> -->
+                                               <!--  -->
+                                                 
+                                                    <a
+                                                        href=" service-Delivery-Services "
+                                                        role="menuitem"
+                                                        class="block p-3 -m-3 transition rounded-md  focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 hover:bg-gray-50"
+                                                    >
+                                                        <!-- <p class="text-base font-medium text-gray-900">We offer a hassle-free delivery service for mulch, rocks or dirt. We&#x27;ll take care of the delivery so you can focus on your project.</p> -->
+                                                        <p class="mt-1 text-sm text-gray-500">Delivery Services</p>
                                                     </a>
                                                 <!-- </each> -->
                                                <!--  -->
@@ -513,6 +527,17 @@
                     <!-- CTA Primary-Invert -->
                     <div class="inline-flex w-full ml-3 sm:w-auto">
                         
+                        <div class="inline-flex w-full ml-3 sm:w-auto">
+                            <a
+                                target = "_blank" 
+                                href="tel:+13524849508"
+                                :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
+                                class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 sm:w-auto text-primary border-primary"
+                                >
+                                352-484-9508
+                            </a>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -635,6 +660,12 @@
                                                 </a>
                                             <!-- </each> -->
                                             
+                                                <a href="service-Delivery-Services" role="menuitem" class="block p-3 -m-3 transition rounded-md">
+                                                    <!-- <p class="text-base font-medium text-gray-900">We offer a hassle-free delivery service for mulch, rocks or dirt. We&#x27;ll take care of the delivery so you can focus on your project.</p> -->
+                                                    <p class="mt-1 text-sm text-gray-500">Delivery Services</p>
+                                                </a>
+                                            <!-- </each> -->
+                                            
                                         </div>
                                     </div>
                                 
@@ -727,6 +758,15 @@
                                 Send us a Text
                             </button>
                         
+                        
+                            <a
+                                target = "_blank" 
+                                href="tel:+13524849508"
+                                :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
+                                class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 sm:w-auto text-primary border-primary"
+                                >
+                                352-484-9508
+                            </a>
                          
                      
                 
@@ -828,7 +868,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/567c6c6c-57b5-4172-91cc-e9d2c97ef80a.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/567c6c6c-57b5-4172-91cc-e9d2c97ef80a.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/567c6c6c-57b5-4172-91cc-e9d2c97ef80a.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/567c6c6c-57b5-4172-91cc-e9d2c97ef80a.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/567c6c6c-57b5-4172-91cc-e9d2c97ef80a.jpeg" alt="" /> -->
                             
@@ -849,7 +889,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7a83ddcc-c5c4-4cdd-a5b4-3ace52ba494a.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/7a83ddcc-c5c4-4cdd-a5b4-3ace52ba494a.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/7a83ddcc-c5c4-4cdd-a5b4-3ace52ba494a.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7a83ddcc-c5c4-4cdd-a5b4-3ace52ba494a.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/7a83ddcc-c5c4-4cdd-a5b4-3ace52ba494a.jpeg" alt="" /> -->
                             
@@ -870,7 +910,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5418650d-4323-41d7-9c33-435a8faf238d.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/5418650d-4323-41d7-9c33-435a8faf238d.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/5418650d-4323-41d7-9c33-435a8faf238d.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5418650d-4323-41d7-9c33-435a8faf238d.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/5418650d-4323-41d7-9c33-435a8faf238d.jpeg" alt="" /> -->
                             
@@ -891,7 +931,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/77bb1eea-cb77-446c-b244-07fd19786acd.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/77bb1eea-cb77-446c-b244-07fd19786acd.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/77bb1eea-cb77-446c-b244-07fd19786acd.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/77bb1eea-cb77-446c-b244-07fd19786acd.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/77bb1eea-cb77-446c-b244-07fd19786acd.jpeg" alt="" /> -->
                             
@@ -912,7 +952,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/942014d1-015f-4f8a-a91b-5bc4e9add084.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/942014d1-015f-4f8a-a91b-5bc4e9add084.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/942014d1-015f-4f8a-a91b-5bc4e9add084.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/942014d1-015f-4f8a-a91b-5bc4e9add084.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/942014d1-015f-4f8a-a91b-5bc4e9add084.jpeg" alt="" /> -->
                             
@@ -933,7 +973,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c0bfce04-b7c0-4e10-af9a-7267a2e2414b.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/c0bfce04-b7c0-4e10-af9a-7267a2e2414b.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/c0bfce04-b7c0-4e10-af9a-7267a2e2414b.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c0bfce04-b7c0-4e10-af9a-7267a2e2414b.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/c0bfce04-b7c0-4e10-af9a-7267a2e2414b.jpeg" alt="" /> -->
                             
@@ -954,7 +994,7 @@
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/81f6ef70-8961-4c7a-90c3-7e19dee0de2a.jpeg" alt="" /> -->
                              
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/81f6ef70-8961-4c7a-90c3-7e19dee0de2a.jpeg" alt="" loading="lazy"/>
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/81f6ef70-8961-4c7a-90c3-7e19dee0de2a.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/81f6ef70-8961-4c7a-90c3-7e19dee0de2a.jpeg" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/81f6ef70-8961-4c7a-90c3-7e19dee0de2a.jpeg" alt="" /> -->
                             
@@ -1019,7 +1059,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 0">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/567c6c6c-57b5-4172-91cc-e9d2c97ef80a.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/567c6c6c-57b5-4172-91cc-e9d2c97ef80a.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1027,7 +1067,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 1">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7a83ddcc-c5c4-4cdd-a5b4-3ace52ba494a.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/7a83ddcc-c5c4-4cdd-a5b4-3ace52ba494a.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1035,7 +1075,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5418650d-4323-41d7-9c33-435a8faf238d.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/5418650d-4323-41d7-9c33-435a8faf238d.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1043,7 +1083,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/77bb1eea-cb77-446c-b244-07fd19786acd.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/77bb1eea-cb77-446c-b244-07fd19786acd.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1051,7 +1091,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/942014d1-015f-4f8a-a91b-5bc4e9add084.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/942014d1-015f-4f8a-a91b-5bc4e9add084.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1059,7 +1099,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 5">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c0bfce04-b7c0-4e10-af9a-7267a2e2414b.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/c0bfce04-b7c0-4e10-af9a-7267a2e2414b.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1067,7 +1107,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 6">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/81f6ef70-8961-4c7a-90c3-7e19dee0de2a.jpeg" alt="placeholder image" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/81f6ef70-8961-4c7a-90c3-7e19dee0de2a.jpeg" alt="Our Equipment for Redline Dumpster in Hernando County, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -1155,16 +1195,16 @@
               <p class="text-base text-gray-100">
                   Redline Dumpster<br/>
                    
-                      Spring Hill, FL <br/>
+                      Hernando County, FL <br/>
                   
-                  (850) 449-3014
+                  +13524849508
                   <!-- Is this supposed to be here and correct?  -->
                   <!-- The finest landscaping in Austin & surrounding areas. Exceptional, professional service. You are our priority! -->
               </p>
               <div class="flex space-x-6">
                   <!-- are these conditional? and linked to corret links? -->
                   
-                  <a target="_blank" rel="noopener noreferrer" href="//facebook.com/redlinedumpster" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
+                  <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/redlinedumpster" class="text-gray-100 hover:text-gray-300 focus:outline-none focus:ring-2 ring-white ring-opacity-75">
                       <span class="sr-only">Facebook</span>
                       <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                           <path
@@ -1237,6 +1277,13 @@
                           
                           
                           
+                          <li>
+                              <a
+                                  href='sitemap.xml'
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Sitemap</a
+                              >
+                          </li>
                       </ul>
                   </div>
                   <!-- Services Links -->
@@ -1268,6 +1315,14 @@
                               >
                           </li>
                           
+                          <li>
+                              <a
+                                  href="service-Delivery-Services"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Delivery Services</a
+                              >
+                          </li>
+                          
                       </ul>
                   </div>
               </div>
@@ -1282,7 +1337,23 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
-                                  >Spring Hill, FL</a
+                                  >Hernando County, FL</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="#"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Citrus County, FL</a
+                              >
+                          </li>
+                          
+                          <li>
+                              <a
+                                  href="#"
+                                  class="p-1 text-base text-gray-100 rounded hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-opacity-75"
+                                  >Pasco County, FL</a
                               >
                           </li>
                           
@@ -1297,7 +1368,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Sun: 0:00am - 0:00am</a
+                                  >Sun: 9:00am - 3:00pm</a
                               >
                           </li>
                           
@@ -1305,7 +1376,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Mon: 8:00am - 6:00pm</a
+                                  >Mon: 8:00am - 8:00pm</a
                               >
                           </li>
                           
@@ -1313,7 +1384,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Tues: 8:00am - 6:00pm</a
+                                  >Tues: 8:00am - 8:00pm</a
                               >
                           </li>
                           
@@ -1321,7 +1392,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Wed: 8:00am - 6:00pm</a
+                                  >Wed: 8:00am - 8:00pm</a
                               >
                           </li>
                           
@@ -1329,7 +1400,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Thu: 8:00am - 6:00pm</a
+                                  >Thu: 8:00am - 8:00pm</a
                               >
                           </li>
                           
@@ -1345,7 +1416,7 @@
                               <a
                                   href="#"
                                   class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75"
-                                  >Sat: 0:00am - 0:00am</a
+                                  >Sat: 8:00am - 6:00pm</a
                               >
                           </li>
                           
@@ -1522,36 +1593,46 @@
                         <!-- <fieldset>
                             <legend class="text-base font-medium text-gray-900">Services</legend>
                             <div class="mt-2.5 grid gap-y-3.5 grid-cols-2">
-                                3
+                                4
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-145702"
-                                            name="145702"
+                                            id="contact-service-160536"
+                                            name="160536"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-145702" class="ml-3 text-sm font-medium text-gray-700">Dumpster Rental</label>
+                                        <label for="contact-label-service-160536" class="ml-3 text-sm font-medium text-gray-700">Dumpster Rental</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-145703"
-                                            name="145703"
+                                            id="contact-service-160537"
+                                            name="160537"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-145703" class="ml-3 text-sm font-medium text-gray-700">Junk Removal</label>
+                                        <label for="contact-label-service-160537" class="ml-3 text-sm font-medium text-gray-700">Junk Removal</label>
                                     </div>
                                 
                                     <div class="flex items-center">
                                         <input
-                                            id="contact-service-145704"
-                                            name="145704"
+                                            id="contact-service-160538"
+                                            name="160538"
                                             type="checkbox"
                                             class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                         />
-                                        <label for="contact-label-service-145704" class="ml-3 text-sm font-medium text-gray-700">Debris Removal</label>
+                                        <label for="contact-label-service-160538" class="ml-3 text-sm font-medium text-gray-700">Debris Removal</label>
+                                    </div>
+                                
+                                    <div class="flex items-center">
+                                        <input
+                                            id="contact-service-160539"
+                                            name="160539"
+                                            type="checkbox"
+                                            class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
+                                        />
+                                        <label for="contact-label-service-160539" class="ml-3 text-sm font-medium text-gray-700">Delivery Services</label>
                                     </div>
                                 
                             </div>
@@ -1713,7 +1794,7 @@
                     <!-- Yelp Link -->
                     
                     <li>
-                        <a target="_blank" rel="noopener noreferrer" href="//https://facebook.com/Redlinedumpster/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://facebook.com/Redlinedumpster/reviews" class="inline-flex w-full px-5 py-2.5 text-sm font-medium transition border-2 border-transparent rounded-md bg-primary text-primary-foreground focus:outline-none hover:bg-primary-darker focus:ring-2 ring-primary ring-opacity-75 ring-offset-2">Leave a Review</a>
                     </li>
                     
                 </ul>
