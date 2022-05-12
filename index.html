@@ -681,11 +681,11 @@
                         <div class="inline-flex w-full ml-3 sm:w-auto">
                             <a
                                 target = "_blank" 
-                                href="tel:+13524849508"
+                                href="tel:+13528489508 "
                                 :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
                                 class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 sm:w-auto text-primary border-primary"
                                 >
-                                352-484-9508
+                                352-848-9508 
                             </a>
                         </div>
                         
@@ -912,11 +912,11 @@
                         
                             <a
                                 target = "_blank" 
-                                href="tel:+13524849508"
+                                href="tel:+13528489508 "
                                 :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
                                 class="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium transition bg-white border-2 rounded-md  hover:bg-primary hover:bg-opacity-10 focus:outline-none focus:ring-2 ring-primary ring-opacity-75 ring-offset-2 sm:w-auto text-primary border-primary"
                                 >
-                                352-484-9508
+                                352-848-9508 
                             </a>
                          
                      
@@ -1866,6 +1866,27 @@
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
                     <button @click="activeImage = 2; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
+                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a0e8d6cd-eb5a-464e-9069-9ae340d3d1af.png" alt="" /> -->
+                             
+                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/a0e8d6cd-eb5a-464e-9069-9ae340d3d1af.png" alt="Dumpster Rental for Redline Dumpster in Hernando County, FL" loading="lazy"/> 
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a0e8d6cd-eb5a-464e-9069-9ae340d3d1af.png" alt="" /> -->
+                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/a0e8d6cd-eb5a-464e-9069-9ae340d3d1af.png" alt="" /> -->
+                            
+                        </div>
+
+                        <div class="space-y-1 text-lg font-medium leading-6">
+                            <p class="line-clamp-3"></p>
+                            <h3 class="text-primary"></h3>
+                        </div>
+                    </button>
+                </div>
+            </li>
+        
+            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
+            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
+                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
+                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                        <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/624661d1-0aaa-41dd-89ad-8e830e5b2e9e.png" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/624661d1-0aaa-41dd-89ad-8e830e5b2e9e.png" alt="Dumpster Rental for Redline Dumpster in Hernando County, FL" loading="lazy"/> 
@@ -1885,34 +1906,13 @@
             <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
             <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
                 <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 3; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
+                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
                         <div class="aspect-w-3 aspect-h-2">
                             <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0c64bf5c-5313-4e0b-ba96-5d4b19dc6cd3.png" alt="" /> -->
                              
                                 <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/0c64bf5c-5313-4e0b-ba96-5d4b19dc6cd3.png" alt="Dumpster Rental for Redline Dumpster in Hernando County, FL" loading="lazy"/> 
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0c64bf5c-5313-4e0b-ba96-5d4b19dc6cd3.png" alt="" /> -->
                                 <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/0c64bf5c-5313-4e0b-ba96-5d4b19dc6cd3.png" alt="" /> -->
-                            
-                        </div>
-
-                        <div class="space-y-1 text-lg font-medium leading-6">
-                            <p class="line-clamp-3"></p>
-                            <h3 class="text-primary"></h3>
-                        </div>
-                    </button>
-                </div>
-            </li>
-        
-            <!-- Single Item - We only want to show 3 items on mobile so we check the current index and attach a hidden class if necessary -->
-            <li x-cloak x-data="{ shown: false }" x-intersect.full="shown = true" class=" block ">
-                <div x-show="shown" x-transition:enter="transition duration-1000" x-transition:enter-start="transform translate-y-20" x-transition:enter-end="transform translate-y-0">
-                    <button @click="activeImage = 4; galleryModalOpen = true" class="block w-full h-full space-y-4 text-left rounded focus:outline-none focus-visible:ring ring-primary ring-offset-2 ring-opacity-75">
-                        <div class="aspect-w-3 aspect-h-2">
-                            <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a0e8d6cd-eb5a-464e-9069-9ae340d3d1af.png" alt="" /> -->
-                             
-                                <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/media/a0e8d6cd-eb5a-464e-9069-9ae340d3d1af.png" alt="Dumpster Rental for Redline Dumpster in Hernando County, FL" loading="lazy"/> 
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a0e8d6cd-eb5a-464e-9069-9ae340d3d1af.png" alt="" /> -->
-                                <!-- <img class="object-cover rounded-lg shadow-lg" src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/x/media/a0e8d6cd-eb5a-464e-9069-9ae340d3d1af.png" alt="" /> -->
                             
                         </div>
 
@@ -2138,7 +2138,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 2">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/624661d1-0aaa-41dd-89ad-8e830e5b2e9e.png" alt="Dumpster Rental for Redline Dumpster in Hernando County, FL" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a0e8d6cd-eb5a-464e-9069-9ae340d3d1af.png" alt="Dumpster Rental for Redline Dumpster in Hernando County, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2146,7 +2146,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 3">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0c64bf5c-5313-4e0b-ba96-5d4b19dc6cd3.png" alt="Dumpster Rental for Redline Dumpster in Hernando County, FL" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/624661d1-0aaa-41dd-89ad-8e830e5b2e9e.png" alt="Dumpster Rental for Redline Dumpster in Hernando County, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2154,7 +2154,7 @@
                                     <!-- Transition Wrapper 1 -->
                                     <li class="flex flex-col" x-show="activeImage === 4">
                                             
-                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/a0e8d6cd-eb5a-464e-9069-9ae340d3d1af.png" alt="Dumpster Rental for Redline Dumpster in Hernando County, FL" loading="lazy"/>
+                                            <img class="mt-2 lg:h-[481px] h-[200px] sm:h-[300px] self-center rounded-md object-cover"  src="https://d3p2r6ofnvoe67.cloudfront.net/fit-in/684x480/media/0c64bf5c-5313-4e0b-ba96-5d4b19dc6cd3.png" alt="Dumpster Rental for Redline Dumpster in Hernando County, FL" loading="lazy"/>
                                             <p lorem="1" class="mt-3 text-gray-500"></p>
                                         
                                     </li>
@@ -2575,7 +2575,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="45668"
+                                aria-controls="65339"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">What&#x27;s the best way to reach you?</span>
@@ -2595,9 +2595,9 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="45668">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="65339">
                             <div aria-hidden="true" class="invisible h-2"></div>
-                            <p class="mt-2 text-base text-gray-100">Give us a call or send us a text at +1352-484-9508. Thanks!</p>
+                            <p class="mt-2 text-base text-gray-100">Give us a call or send us a text at 352-848-9508. Thanks!</p>
                         </dd>
                     </div>
                 
@@ -2608,7 +2608,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="45669"
+                                aria-controls="65340"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">Do you provide free estimates?</span>
@@ -2628,7 +2628,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="45669">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="65340">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">Yes, we&#x27;ll always estimate the job for free. Just give us a call to get started.</p>
                         </dd>
@@ -2641,7 +2641,7 @@
                                 type="button"
                                 @click="expanded = !expanded"
                                 class="flex items-start justify-between w-full text-left text-white rounded  focus:outline-none focus-visible:ring-2 ring-white"
-                                aria-controls="45670"
+                                aria-controls="65341"
                                 :aria-expanded="expanded"
                             >
                             <span class="font-medium text-white">How are you different?</span>
@@ -2661,7 +2661,7 @@
                                 </span>
                             </button>
                         </dt>
-                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="45670">
+                        <dd x-show="expanded" x-cloak x-collapse class="pr-12" id="65341">
                             <div aria-hidden="true" class="invisible h-2"></div>
                             <p class="mt-2 text-base text-gray-100">We&#x27;re a customer-first company that will do whatever it takes to make sure the job is well done.</p>
                         </dd>
@@ -2863,7 +2863,7 @@
                    
                       Hernando County, FL <br/>
                   
-                  +13524849508
+                  +13528489508 
                   <!-- Is this supposed to be here and correct?  -->
                   <!-- The finest landscaping in Austin & surrounding areas. Exceptional, professional service. You are our priority! -->
               </p>
@@ -3232,46 +3232,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-160536"
-                                                    name="160536"
+                                                    id="contact-service-208030"
+                                                    name="208030"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Dumpster Rental"
                                             />
-                                            <label for="contact-label-service-160536" class="ml-3 text-sm font-medium text-gray-700">Dumpster Rental</label>
+                                            <label for="contact-label-service-208030" class="ml-3 text-sm font-medium text-gray-700">Dumpster Rental</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-160537"
-                                                    name="160537"
+                                                    id="contact-service-208031"
+                                                    name="208031"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Junk Removal"
                                             />
-                                            <label for="contact-label-service-160537" class="ml-3 text-sm font-medium text-gray-700">Junk Removal</label>
+                                            <label for="contact-label-service-208031" class="ml-3 text-sm font-medium text-gray-700">Junk Removal</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-160538"
-                                                    name="160538"
+                                                    id="contact-service-208032"
+                                                    name="208032"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Debris Removal"
                                             />
-                                            <label for="contact-label-service-160538" class="ml-3 text-sm font-medium text-gray-700">Debris Removal</label>
+                                            <label for="contact-label-service-208032" class="ml-3 text-sm font-medium text-gray-700">Debris Removal</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-160539"
-                                                    name="160539"
+                                                    id="contact-service-208033"
+                                                    name="208033"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Delivery Services"
                                             />
-                                            <label for="contact-label-service-160539" class="ml-3 text-sm font-medium text-gray-700">Delivery Services</label>
+                                            <label for="contact-label-service-208033" class="ml-3 text-sm font-medium text-gray-700">Delivery Services</label>
                                         </div>
                                         
                                     </div>
@@ -3302,46 +3302,46 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-160536"
-                                                    name="160536"
+                                                    id="contact-service-208030"
+                                                    name="208030"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Dumpster Rental"
                                             />
-                                            <label for="contact-label-service-160536" class="ml-3 text-sm font-medium text-gray-700">Dumpster Rental</label>
+                                            <label for="contact-label-service-208030" class="ml-3 text-sm font-medium text-gray-700">Dumpster Rental</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-160537"
-                                                    name="160537"
+                                                    id="contact-service-208031"
+                                                    name="208031"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Junk Removal"
                                             />
-                                            <label for="contact-label-service-160537" class="ml-3 text-sm font-medium text-gray-700">Junk Removal</label>
+                                            <label for="contact-label-service-208031" class="ml-3 text-sm font-medium text-gray-700">Junk Removal</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-160538"
-                                                    name="160538"
+                                                    id="contact-service-208032"
+                                                    name="208032"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Debris Removal"
                                             />
-                                            <label for="contact-label-service-160538" class="ml-3 text-sm font-medium text-gray-700">Debris Removal</label>
+                                            <label for="contact-label-service-208032" class="ml-3 text-sm font-medium text-gray-700">Debris Removal</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-160539"
-                                                    name="160539"
+                                                    id="contact-service-208033"
+                                                    name="208033"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Delivery Services"
                                             />
-                                            <label for="contact-label-service-160539" class="ml-3 text-sm font-medium text-gray-700">Delivery Services</label>
+                                            <label for="contact-label-service-208033" class="ml-3 text-sm font-medium text-gray-700">Delivery Services</label>
                                         </div>
                                         
                                     </div>
